@@ -1,11 +1,12 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import { Categories, Container, Title } from "@/components/shared";
 
 export default function Home() {
    return (
       <>
-         <h1>hello</h1>
-         <Button variant={"outline"}>Shopping cart</Button>
+         <Container className="mt-10">
+            <Title text="all pizza" size="lg" className="font-extrabold" />
+            <Categories />
+         </Container>
       </>
    );
 }
