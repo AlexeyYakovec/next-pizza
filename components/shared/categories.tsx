@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import React from "react";
+import { SortPopup } from "./sort-popup";
 
 interface Props {
    className?: string;
