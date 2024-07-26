@@ -34,7 +34,7 @@ export const Header: React.FC<Props> = ({ className }) => {
                      variant={"outline"}
                   >
                      <User size={16} />
-                     Sign in
+                     Войти
                   </Button>
                </div>
 

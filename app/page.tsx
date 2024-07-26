@@ -11,11 +11,11 @@ export default function Home() {
    return (
       <>
          <Container className="mt-10">
-            <Title text="all pizza" size="lg" className="font-extrabold" />
+            <Title text="Каталог" size="lg" className="font-extrabold" />
          </Container>
          <TopBar />
 
-         <Container className="pb-14 mt-5">
+         <Container className="pb-14 mt-10">
             <div className="flex gap-[60px]">
                {/* Фильтрация */}
                <div className="w-[250px]">

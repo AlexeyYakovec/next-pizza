@@ -7,13 +7,13 @@ interface Props {
 }
 
 const cats = [
-   "Pizza's",
-   "Combo",
-   "Appetizers",
-   "Cocktails",
-   "Coffee",
-   "Beverages",
-   "Desserts",
+   "Пиццы",
+   "Комбо",
+   "Закуски",
+   "Коктейли",
+   "Кофе",
+   "Напитки",
+   "Десерты",
 ];
 const activeIndex = 0;
 
