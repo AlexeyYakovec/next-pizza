@@ -5,7 +5,6 @@ import {
    SortPopup,
    Title,
    TopBar,
-   ProductCard,
    ProductsGroupList,
 } from "@/components/shared";
 
@@ -27,10 +26,55 @@ export default function Home() {
                {/* Список товаров */}
                <div className="flex-1">
                   <div className="flex flex-col gap-16">
-                     <h2>Список товаров</h2>
                      <ProductsGroupList
                         title="Пиццы"
                         products={[
+                           {
+                              id: 1,
+                              name: "Пепперони",
+                              price: 1200,
+                              imageUrl:
+                                 "https://media.dodostatic.net/image/r:292x292/11EE7D6122BB3424B593BB15EACE3197.avif",
+                              items: [{ price: 1200 }],
+                           },
+                           {
+                              id: 1,
+                              name: "Пепперони",
+                              price: 1200,
+                              imageUrl:
+                                 "https://media.dodostatic.net/image/r:292x292/11EE7D6122BB3424B593BB15EACE3197.avif",
+                              items: [{ price: 1200 }],
+                           },
+                           {
+                              id: 1,
+                              name: "Пепперони",
+                              price: 1200,
+                              imageUrl:
+                                 "https://media.dodostatic.net/image/r:292x292/11EE7D6122BB3424B593BB15EACE3197.avif",
+                              items: [{ price: 1200 }],
+                           },
+                        ]}
+                        categoryId={1}
+                     />
+                     <ProductsGroupList
+                        title="Завтрак"
+                        products={[
+                           {
+                              id: 1,
+                              name: "Пепперони",
+                              price: 1200,
+                              imageUrl:
+                                 "https://media.dodostatic.net/image/r:292x292/11EE7D6122BB3424B593BB15EACE3197.avif",
+                              items: [{ price: 1200 }],
+                           },
+                           {
+                              id: 1,
+                              name: "Пепперони",
+                              price: 1200,
+                              imageUrl:
+                                 "https://media.dodostatic.net/image/r:292x292/11EE7D6122BB3424B593BB15EACE3197.avif",
+                              items: [{ price: 1200 }],
+                           },
                            {
                               id: 1,
                               name: "Пепперони",

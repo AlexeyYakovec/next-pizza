@@ -11,7 +11,7 @@ export const TopBar: React.FC<Props> = ({ className }) => {
    return (
       <div
          className={cn(
-            "sticky top-0 bg-transparent py-5 shadow-lg shadow-black/5 z-10",
+            "sticky top-0 bg-gray-100 py-5 shadow-lg shadow-black/5 z-10",
             className
          )}
       >
