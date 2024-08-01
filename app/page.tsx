@@ -53,11 +53,35 @@ export default function Home() {
                                  "https://media.dodostatic.net/image/r:292x292/11EE7D6122BB3424B593BB15EACE3197.avif",
                               items: [{ price: 1200 }],
                            },
+                           {
+                              id: 4,
+                              name: "Пепперони",
+                              price: 1200,
+                              imageUrl:
+                                 "https://media.dodostatic.net/image/r:292x292/11EE7D6122BB3424B593BB15EACE3197.avif",
+                              items: [{ price: 1200 }],
+                           },
+                           {
+                              id: 5,
+                              name: "Пепперони",
+                              price: 1200,
+                              imageUrl:
+                                 "https://media.dodostatic.net/image/r:292x292/11EE7D6122BB3424B593BB15EACE3197.avif",
+                              items: [{ price: 1200 }],
+                           },
+                           {
+                              id: 6,
+                              name: "Пепперони",
+                              price: 1200,
+                              imageUrl:
+                                 "https://media.dodostatic.net/image/r:292x292/11EE7D6122BB3424B593BB15EACE3197.avif",
+                              items: [{ price: 1200 }],
+                           },
                         ]}
                         categoryId={1}
                      />
                      <ProductsGroupList
-                        title="Завтрак"
+                        title="Комбо"
                         products={[
                            {
                               id: 1,

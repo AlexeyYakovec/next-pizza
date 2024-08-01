@@ -1,23 +1,27 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import React from "react";
 import { SortPopup } from "./sort-popup";
+import { useCategoryState } from "@/store/category";
 
 interface Props {
    className?: string;
 }
-
 const cats = [
-   "Пиццы",
-   "Комбо",
-   "Закуски",
-   "Коктейли",
-   "Кофе",
-   "Напитки",
-   "Десерты",
+   { id: 1, name: "Пиццы" },
+   { id: 2, name: "Комбо" },
+   { id: 3, name: "Закуски" },
+   { id: 4, name: "Коктейли" },
+   { id: 5, name: "Кофе" },
+   { id: 6, name: "Напитки" },
+   { id: 7, name: "Десерты" },
 ];
-const activeIndex = 0;
 
 export const Categories: React.FC<Props> = ({ className }) => {
+   const categoryActiveId = useCategoryState((state) => state.activeId);
+   console.log(`categoryActiveId: `, categoryActiveId);
+
    return (
       <div
          className={cn(
@@ -30,13 +34,14 @@ export const Categories: React.FC<Props> = ({ className }) => {
                <a
                   className={cn(
                      "flex items-center font-bold h-11 rounded-2xl px-5",
-                     activeIndex === index &&
+                     categoryActiveId === cat.id &&
                         "bg-white shadow-md shadow-gray-200 text-primary"
                   )}
-                  key={index}
+                  key={cat.id}
+                  href={`/#${cat.name}`}
                >
                   <button>
-                     <span>{cat}</span>
+                     <span>{cat.name}</span>
                   </button>
                </a>
             );
