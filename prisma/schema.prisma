@@ -1,0 +1,29 @@
+generator client {
+	provider = "prisma-client-js"
+} // Клиент js c который нужно работать в prisma (Создаёт ts типезацию)
+
+datasource db {
+	provider = "postgresql"
+	url = env("POSTGRES_URL")
+	directUrl = env("POSTGRES_URL_NON_POOLING") 
+} // Объясняем с какой БД необходимо работать
+
+model User {
+	id	Int @id @default(autoincrement()) // при создании пользователя автоматически будет прибовляться +1
+	fullName	String
+	email		String
+	password	String
+
+	createdAt	DateTime @default(now()) // Дата создания пользователя. функция now() отвечает за дату создания пользователя.
+	updateAt	DateTime @updatedAt // Отвечает за дату обновления пользователя
+} // Создание таблицы юзеров
+
+model Product {
+	id 	Int @id @default(autoincrement())
+
+	name		String
+	imageUrl	String
+
+	createdAt	DateTime @default(now()) 
+	updateAt	DateTime @updatedAt 
+}
