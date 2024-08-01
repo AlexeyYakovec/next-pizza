@@ -55,12 +55,11 @@ export const CheckboxFiltersGroup: React.FC<Props> = ({
          </div>
       );
    }
-
-   const list = items.filter((item) =>
-      showAll
-         ? item.text.toLowerCase().includes(searchValue.toLowerCase())
-         : defaultItems?.slice(0, limit)
-   );
+   const list = showAll
+      ? items.filter((item) =>
+           item.text.toLowerCase().includes(searchValue.toLocaleLowerCase())
+        )
+      : (defaultItems || items).slice(0, limit);
 
    return (
       <div className={className}>

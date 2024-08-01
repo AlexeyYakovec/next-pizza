@@ -38,7 +38,7 @@ export default function Home() {
                               items: [{ price: 1200 }],
                            },
                            {
-                              id: 1,
+                              id: 2,
                               name: "Пепперони",
                               price: 1200,
                               imageUrl:
@@ -46,7 +46,7 @@ export default function Home() {
                               items: [{ price: 1200 }],
                            },
                            {
-                              id: 1,
+                              id: 3,
                               name: "Пепперони",
                               price: 1200,
                               imageUrl:
@@ -68,7 +68,7 @@ export default function Home() {
                               items: [{ price: 1200 }],
                            },
                            {
-                              id: 1,
+                              id: 2,
                               name: "Пепперони",
                               price: 1200,
                               imageUrl:
@@ -76,7 +76,7 @@ export default function Home() {
                               items: [{ price: 1200 }],
                            },
                            {
-                              id: 1,
+                              id: 3,
                               name: "Пепперони",
                               price: 1200,
                               imageUrl:
@@ -84,7 +84,7 @@ export default function Home() {
                               items: [{ price: 1200 }],
                            },
                         ]}
-                        categoryId={1}
+                        categoryId={2}
                      />
                   </div>
                </div>
